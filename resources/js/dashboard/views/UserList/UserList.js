@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/styles';
-
 import { UsersToolbar, UsersTable } from './components';
 import mockData from './data';
+import ViewTitle from '../../components/ViewTitle/ViewTitle';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -20,6 +20,7 @@ const UserList = () => {
 
   return (
     <div className={classes.root}>
+      <ViewTitle title={"Users"} />
       <UsersToolbar />
       <div className={classes.content}>
         <UsersTable users={users} />

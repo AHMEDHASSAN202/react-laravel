@@ -7,6 +7,8 @@ import { AppBar, Toolbar, Badge, Hidden, IconButton } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import NotificationsIcon from '@material-ui/icons/NotificationsOutlined';
 import InputIcon from '@material-ui/icons/Input';
+import DropDownMenu from './../../../../components/DropDownMenu/DropDownMenu';
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -25,7 +27,29 @@ const Topbar = props => {
 
   const classes = useStyles();
 
-  const [notifications] = useState([]);
+  const [notifications] = useState([
+    'Show some love to Material-UI',
+    'Show all notification content',
+    'Hide sensitive notification content',
+    'Hide all notification content',
+  ]);
+
+  
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+
+  const handleClickIconButton = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  
+  const handleMenuItemClick = (event, index) => {
+    setAnchorEl(null);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
   return (
     <AppBar
@@ -41,11 +65,11 @@ const Topbar = props => {
         </RouterLink>
         <div className={classes.flexGrow} />
         <Hidden mdDown>
-          <IconButton color="inherit">
+          <IconButton color="inherit" aria-haspopup="true" aria-controls="notification-menu" aria-label="Open Notificattion"
+          onClick={handleClickIconButton} >
             <Badge
               badgeContent={notifications.length}
-              color="primary"
-              variant="dot"
+              color="secondary"
             >
               <NotificationsIcon />
             </Badge>
@@ -65,6 +89,13 @@ const Topbar = props => {
             <MenuIcon />
           </IconButton>
         </Hidden>
+        <DropDownMenu 
+          id={"notification-menu"}
+          options={notifications} 
+          anchorEl={anchorEl} 
+          handleMenuItemClick={handleMenuItemClick} 
+          handleClose={handleClose} 
+        />
       </Toolbar>
     </AppBar>
   );
