@@ -1,31 +1,38 @@
 import React, { useState } from 'react';
-import { makeStyles } from '@material-ui/styles';
-import { UsersToolbar, UsersTable } from './components';
 import mockData from './data';
-import ViewTitle from '../../components/ViewTitle/ViewTitle';
+import BrowseView from '../../components/BrowseView/BrowseView';
+import { useHistory } from 'react-router-dom';
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    padding: theme.spacing(3)
-  },
-  content: {
-    marginTop: theme.spacing(2)
-  }
-}));
-
-const UserList = () => {
-  const classes = useStyles();
-
+const UserList = (props) => {
   const [users] = useState(mockData);
+  const history = useHistory();
+  
+  const handleClickRow = (user) => {
+    history.push('/dashboard');
+  }
+
+  const handleChangeInputSearch = (e) => {
+    console.log(e.target.value);
+  }
+
+  const handleAddClick = () => {
+    console.log('Add Click');
+  }
+
+  const handleDeleteClick = (selected) => {
+    console.log(selected);
+  }
 
   return (
-    <div className={classes.root}>
-      <ViewTitle title={"Users"} />
-      <UsersToolbar />
-      <div className={classes.content}>
-        <UsersTable users={users} />
-      </div>
-    </div>
+    <BrowseView 
+      title="User" 
+      label="User" 
+      data={users} 
+      handleChangeInputSearch={handleChangeInputSearch} 
+      handleClickRow={handleClickRow}
+      handleAddClick={handleAddClick}
+      handleDeleteClick={handleDeleteClick}
+    />
   );
 };
 

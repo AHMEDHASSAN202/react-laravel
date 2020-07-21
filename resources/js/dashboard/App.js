@@ -11,6 +11,10 @@ import 'react-perfect-scrollbar/dist/css/styles.css';
 import './assets/css/index.css';
 import validators from './common/validators';
 import Routes from './Routes';
+import { AppContext } from './AppContext';
+import { AppState } from './AppState';
+import { Reducer } from './Reducer';
+
 
 const browserHistory = createBrowserHistory();
 
@@ -23,14 +27,18 @@ validate.validators = {
   ...validators
 };
 
-export default class App extends Component {
-  render() {
-    return (
-      <ThemeProvider theme={theme}>
+
+export default () => {
+  
+  const [data, dispatch] = React.useReducer(Reducer, AppState);
+
+  return (
+    <ThemeProvider theme={theme}>
+      <AppContext.Provider value={{data, dispatch}}>
         <Router history={browserHistory}>
           <Routes />
         </Router>
-      </ThemeProvider>
-    );
-  }
+      </AppContext.Provider>
+    </ThemeProvider>
+  );
 }
