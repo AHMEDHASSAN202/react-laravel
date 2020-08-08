@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState, useContext } from 'react';
 import { makeStyles } from '@material-ui/styles';
 import Toolbar from './Toolbar';
-import Table from './Table';
 import ViewTitle from './../ViewTitle/ViewTitle';
+import LinearProgress from '@material-ui/core/LinearProgress';
+import { AppContext } from '../../AppContext';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -14,15 +15,17 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default props => {
-  const {data, title, label, handleClickRow, handleChangeInputSearch, handleDeleteClick, handleAddClick, ...rest} = props;
+  const {title, ToolbarComponent = Toolbar, ...rest} = props;
+  const {data, dispatch} = useContext(AppContext);
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <ViewTitle title={title} />
-      <Toolbar label={label} handleChangeInputSearch={handleChangeInputSearch} handleDeleteClick={handleDeleteClick} handleAddClick={handleAddClick} {...rest} />
+      <ToolbarComponent {...rest} />
       <div className={classes.content}>
-        <Table data={data} handleClickRow={handleClickRow} {...rest} />
+      {data.sectionLoading ? <LinearProgress /> : ''}
+          { props.children }
       </div>
     </div>
   );

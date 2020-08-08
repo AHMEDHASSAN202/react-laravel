@@ -1,0 +1,17 @@
+data = [
+    {
+        label: "",
+        value: "",
+        component: ""
+    }
+]
+
+//display Titles
+for (let i = 0, i < data.length, i++) {
+    <title>{data[i].lebel}</title>
+}
+
+//display body
+for (let i = 0, i < data.length, i++) {
+    <Cell>{data[i].component != "" : <data[i].component row={data[i]} /> : data[i].value}</Cell>
+}

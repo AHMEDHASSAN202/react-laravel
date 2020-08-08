@@ -3,13 +3,7 @@ import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
 import { Divider, Drawer } from '@material-ui/core';
-import DashboardIcon from '@material-ui/icons/Dashboard';
-import PeopleIcon from '@material-ui/icons/People';
-import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
-import TextFieldsIcon from '@material-ui/icons/TextFields';
-import ImageIcon from '@material-ui/icons/Image';
-import AccountBoxIcon from '@material-ui/icons/AccountBox';
-import SettingsIcon from '@material-ui/icons/Settings';
+import modules from './.../../../../../../pages';
 
 import { Profile, SidebarNav } from './components';
 
@@ -41,44 +35,6 @@ const Sidebar = props => {
 
   const classes = useStyles();
 
-  const pages = [
-    {
-      title: 'Dashboard',
-      href: '/dashboard',
-      icon: <DashboardIcon />
-    },
-    {
-      title: 'Users',
-      href: '/dashboard/users',
-      icon: <PeopleIcon />
-    },
-    {
-      title: 'Products',
-      href: '/dashboard/products',
-      icon: <ShoppingBasketIcon />
-    },
-    {
-      title: 'Typography',
-      href: '/dashboard/typography',
-      icon: <TextFieldsIcon />
-    },
-    {
-      title: 'Icons',
-      href: '/dashboard/icons',
-      icon: <ImageIcon />
-    },
-    {
-      title: 'Account',
-      href: '/dashboard/account',
-      icon: <AccountBoxIcon />
-    },
-    {
-      title: 'Settings',
-      href: '/dashboard/settings',
-      icon: <SettingsIcon />
-    }
-  ];
-
   return (
     <Drawer
       anchor="left"
@@ -95,7 +51,7 @@ const Sidebar = props => {
         <Divider className={classes.divider} />
         <SidebarNav
           className={classes.nav}
-          pages={pages}
+          modules={modules}
         />
       </div>
       </Drawer>

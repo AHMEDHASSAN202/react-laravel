@@ -4,5 +4,7 @@ export const AppState = {
     isAuthenticated: false,
     user: null,
     token: null,
-    all_checked: []
+    all_checked: [],
+    pageLoading: true,
+    sectionLoading: true,
 };

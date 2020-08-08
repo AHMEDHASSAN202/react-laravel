@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const Settings = () => {
+const SettingsView = () => {
   const classes = useStyles();
 
   return (
@@ -38,4 +38,4 @@ const Settings = () => {
   );
 };
 
-export default Settings;
+export default SettingsView;

@@ -29,7 +29,10 @@ const useStyles = makeStyles(theme => ({
   },
   removeBtn: {
     backgroundColor: theme.palette.error.main,
-    color: '#fff'
+    color: '#fff',
+    "&:hover": {
+        backgroundColor: theme.palette.error.dark
+    }
   }
 }));
 
@@ -60,8 +63,6 @@ export default props => {
           <Button
             onClick={() => handleDeleteClick != null ? handleDeleteClick(data) : false }
             className={clsx(classes.btn, classes.removeBtn)}
-            size="large"
-            color="inherit"
             variant="contained"
             startIcon={<DeleteIcon />}
           >
@@ -70,7 +71,6 @@ export default props => {
           <Button
             onClick={handleAddClick}
             className={classes.btn}
-            size="large"
             color="primary"
             variant="contained"
             startIcon={<SaveIcon />}

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import { Chart } from 'react-chartjs-2';
@@ -9,7 +9,7 @@ import { chartjs } from './helpers';
 import theme from './theme';
 import 'react-perfect-scrollbar/dist/css/styles.css';
 import './assets/css/index.css';
-import validators from './common/validators';
+import validators from './helpers/validators';
 import Routes from './Routes';
 import { AppContext } from './AppContext';
 import { AppState } from './AppState';
@@ -29,7 +29,7 @@ validate.validators = {
 
 
 export default () => {
-  
+
   const [data, dispatch] = React.useReducer(Reducer, AppState);
 
   return (

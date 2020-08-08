@@ -1,1 +1,3 @@
 export const ALL_CHECKED = "ALL_CHECKED";
+export const PAGE_LOADING = "PAGE_LOADING";
+export const SECTION_LOADING = "SECTION_LOADING";

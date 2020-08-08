@@ -5,73 +5,208 @@ import { RouteWithLayout } from './components';
 import { Main as MainLayout, Minimal as MinimalLayout } from './layouts';
 
 import {
-  Dashboard as DashboardView,
-  ProductList as ProductListView,
-  UserList as UserListView,
-  Typography as TypographyView,
-  Icons as IconsView,
-  Account as AccountView,
-  Settings as SettingsView,
-  NotFound as NotFoundView
+  DashboardView,
+  UsersListView,
+  StoresListView,
+  StoresApprovalListView,
+  SettingsView,
+  NotFoundView,
 } from './views';
 
 const Routes = () => {
   return (
     <Switch>
-      <Redirect
-        exact
-        from="/"
-        to="/dashboard"
-      />
       <RouteWithLayout
         component={DashboardView}
         exact
         layout={MainLayout}
         path="/dashboard"
       />
+      {/* Stores Routes */}
       <RouteWithLayout
-        component={UserListView}
+        component={StoresListView}
         exact
         layout={MainLayout}
-        path="/dashboard/users"
+        path="/dashboard/stores"
       />
+       <RouteWithLayout
+        component={StoresApprovalListView}
+        exact
+        layout={MainLayout}
+        path="/dashboard/stores/approvals"
+      />
+      {/* END Store Routes */}
+      {/* Catalog Routes */}
       <RouteWithLayout
-        component={ProductListView}
+        component={DashboardView}
         exact
         layout={MainLayout}
         path="/dashboard/products"
       />
       <RouteWithLayout
-        component={TypographyView}
+        component={DashboardView}
         exact
         layout={MainLayout}
-        path="/dashboard/typography"
+        path="/dashboard/categories"
       />
       <RouteWithLayout
-        component={IconsView}
+        component={DashboardView}
         exact
         layout={MainLayout}
-        path="/dashboard/icons"
+        path="/dashboard/brands"
       />
       <RouteWithLayout
-        component={AccountView}
+        component={DashboardView}
         exact
         layout={MainLayout}
-        path="/dashboard/account"
+        path="/dashboard/attributes"
       />
+      <RouteWithLayout
+        component={DashboardView}
+        exact
+        layout={MainLayout}
+        path="/dashboard/attributes/group"
+      />
+      <RouteWithLayout
+        component={DashboardView}
+        exact
+        layout={MainLayout}
+        path="/dashboard/options"
+      />
+       <RouteWithLayout
+        component={DashboardView}
+        exact
+        layout={MainLayout}
+        path="/dashboard/tags"
+      />
+       <RouteWithLayout
+        component={DashboardView}
+        exact
+        layout={MainLayout}
+        path="/dashboard/reviews"
+      />
+      {/* END Catalog Routes */}
+      {/* Sales Routes */}
+      <RouteWithLayout
+        component={DashboardView}
+        exact
+        layout={MainLayout}
+        path="/dashboard/orders"
+      />
+      <RouteWithLayout
+        component={DashboardView}
+        exact
+        layout={MainLayout}
+        path="/dashboard/transactions"
+      />
+      <RouteWithLayout
+        component={DashboardView}
+        exact
+        layout={MainLayout}
+        path="/dashboard/returns"
+      />
+      {/* END Sales Routes */}
+      {/* Customers Routes */}
+      <RouteWithLayout
+        component={DashboardView}
+        exact
+        layout={MainLayout}
+        path="/dashboard/customers"
+      />
+      <RouteWithLayout
+        component={DashboardView}
+        exact
+        layout={MainLayout}
+        path="/dashboard/customers/approvals"
+      />
+      {/* END Customer Routes */}
+      {/* Coupon Routes */}
+      <RouteWithLayout
+        component={DashboardView}
+        exact
+        layout={MainLayout}
+        path="/dashboard/coupons"
+      />
+      {/* END Coupon Routes */}
+      {/* Pages Routes */}
+      <RouteWithLayout
+        component={DashboardView}
+        exact
+        layout={MainLayout}
+        path="/dashboard/pages"
+      />
+      {/* END Pages Routes */}
+      {/* Media Routes */}
+      <RouteWithLayout
+        component={DashboardView}
+        exact
+        layout={MainLayout}
+        path="/dashboard/media"
+      />
+      {/* END Media Routes */}
+       {/* Localization Routes */}
+       <RouteWithLayout
+        component={DashboardView}
+        exact
+        layout={MainLayout}
+        path="/dashboard/languages"
+      />
+      <RouteWithLayout
+        component={DashboardView}
+        exact
+        layout={MainLayout}
+        path="/dashboard/translations"
+      />
+      <RouteWithLayout
+        component={DashboardView}
+        exact
+        layout={MainLayout}
+        path="/dashboard/currency-rate"
+      />
+      <RouteWithLayout
+        component={DashboardView}
+        exact
+        layout={MainLayout}
+        path="/dashboard/taxes"
+      />
+      {/* END Localization Routes */}
+      {/* Users Routes */}
+      <RouteWithLayout
+        component={UsersListView}
+        exact
+        layout={MainLayout}
+        path="/dashboard/users"
+      />
+      <RouteWithLayout
+        component={UsersListView}
+        exact
+        layout={MainLayout}
+        path="/dashboard/roles"
+      />
+      {/* END Users Routes */}
+       {/* Reports Routes */}
+       <RouteWithLayout
+        component={SettingsView}
+        exact
+        layout={MainLayout}
+        path="/dashboard/reports"
+      />
+      {/* END Reports Routes */}
+      {/* Settings Routes */}
       <RouteWithLayout
         component={SettingsView}
         exact
         layout={MainLayout}
         path="/dashboard/settings"
       />
+      {/* END Settings Routes */}
       <RouteWithLayout
         component={NotFoundView}
         exact
         layout={MinimalLayout}
         path="/dashboard/not-found"
       />
-      <Redirect to="/dashboard/not-found" />
+      <Redirect to="/dashboard/not-found"/>
     </Switch>
   );
 };

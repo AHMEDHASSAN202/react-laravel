@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const NotFound = () => {
+const NotFoundView = () => {
   const classes = useStyles();
 
   return (
@@ -53,4 +53,4 @@ const NotFound = () => {
   );
 };
 
-export default NotFound;
+export default NotFoundView;
