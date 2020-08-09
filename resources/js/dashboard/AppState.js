@@ -5,6 +5,6 @@ export const AppState = {
     user: null,
     token: null,
     all_checked: [],
-    pageLoading: true,
-    sectionLoading: true,
+    pageLoading: false,
+    sectionLoading: false,
 };

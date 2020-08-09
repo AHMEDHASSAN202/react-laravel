@@ -9,10 +9,10 @@ class StoresListView extends View {
 
     title = 'Stores';
 
-    constructor(props) {
-        super(props);
+    constructor(props, context) {
+        super(props, context);
         this.state = {
-            users: mockData
+            users: []
         }
     }
 
@@ -36,11 +36,12 @@ class StoresListView extends View {
         console.log(user);
     }
 
-    componentDidMount() {
-        const {dispatch} = this.context;
+    init() {
+        this.context.dispatch({TYPE: SECTION_LOADING, payload: true});
         setTimeout(() => {
-            dispatch({TYPE: SECTION_LOADING, payload: false});
-        }, 5000);
+            this.context.dispatch({TYPE: SECTION_LOADING, payload: false});
+            this.setState({users: mockData})
+        }, 2000);
     }
 
     render () {

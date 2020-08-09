@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
 
 export default props => {
   const {title, ToolbarComponent = Toolbar, ...rest} = props;
-  const {data, dispatch} = useContext(AppContext);
+  const {data} = useContext(AppContext);
   const classes = useStyles();
 
   return (

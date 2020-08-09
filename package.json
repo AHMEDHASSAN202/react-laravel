@@ -38,6 +38,7 @@
         "validate.js": "^0.13.1"
     },
     "dependencies": {
+        "jss-rtl": "^0.3.0",
         "prop-types": "^15.7.2"
     }
 }

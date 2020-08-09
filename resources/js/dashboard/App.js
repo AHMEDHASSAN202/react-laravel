@@ -15,6 +15,7 @@ import { AppContext } from './AppContext';
 import { AppState } from './AppState';
 import { Reducer } from './Reducer';
 
+import RTL from './helpers/RTL';
 
 const browserHistory = createBrowserHistory();
 
@@ -35,9 +36,11 @@ export default () => {
   return (
     <ThemeProvider theme={theme}>
       <AppContext.Provider value={{data, dispatch}}>
-        <Router history={browserHistory}>
-          <Routes />
-        </Router>
+        <RTL>
+          <Router history={browserHistory}>
+            <Routes />
+          </Router>
+        </RTL>
       </AppContext.Provider>
     </ThemeProvider>
   );

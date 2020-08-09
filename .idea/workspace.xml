@@ -3,22 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="a874a964-1319-42e3-8626-0b563ff7fcab" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/logos/logo--white.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/dashboard-app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/dashboard-app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/Routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/common/validators.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/helpers/validators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/AppState.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/AppState.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/dashboard/components/BrowseView/BrowseView.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/components/BrowseView/BrowseView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/components/BrowseView/Table/Table.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/views/UserList/Table/Table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/components/BrowseView/Table/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/views/UserList/Table/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/components/BrowseView/Toolbar/Toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/components/BrowseView/Toolbar/Toolbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/components/LoadingPage/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/components/LoadingPage/Loading.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/components/RouteWithLayout/RouteWithLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/components/RouteWithLayout/RouteWithLayout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/helpers/View.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/helpers/View.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/layouts/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/layouts/Main/Main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/dashboard/layouts/Main/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/layouts/Main/components/Footer/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/dashboard/layouts/Main/components/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/layouts/Main/components/Sidebar/Sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/layouts/Main/components/Sidebar/components/SidebarNav/SidebarNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/layouts/Main/components/Sidebar/components/SidebarNav/SidebarNav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/layouts/Main/components/Topbar/Topbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/layouts/Main/components/Topbar/Topbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/layouts/Minimal/components/Topbar/Topbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/layouts/Minimal/components/Topbar/Topbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/views/UserList/UserList.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/views/UserList/UserList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/views/Dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/views/Dashboard/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/views/Stores/StoresApprovalList.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/views/Stores/StoresApprovalList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/views/Stores/StoresList.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/views/Stores/StoresList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/views/Users/UsersList.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/views/Users/UsersList.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,7 +42,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -233,24 +230,6 @@
               <item name="ReactDashboard" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReactDashboard" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="ReactDashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReactDashboard" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ReactDashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReactDashboard" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ReactDashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReactDashboard" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="logos" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -306,11 +285,12 @@
       <workItem from="1595115494923" duration="4283000" />
       <workItem from="1596652139567" duration="4058000" />
       <workItem from="1596725930652" duration="5461000" />
+      <workItem from="1596975922281" duration="2544000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13802000" />
+    <option name="totallyTimeSpent" value="16346000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -330,22 +310,22 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.48856208" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.48856208" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.32959184" />
-      <window_info anchor="bottom" id="TypeScript" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26020408" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26530612" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32959184" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,9 +339,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
           <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -369,22 +346,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/dashboard/views/UserList/UserList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/dashboard/views/UserList/UserList.js" />
     <entry file="file://$PROJECT_DIR$/webpack.mix.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -392,16 +357,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/dashboard/views/UserList/Table/Table.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="49" column="53" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/dashboard/views/UserList/Table/Table.js" />
     <entry file="file://$PROJECT_DIR$/resources/js/dashboard/theme/palette.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="800">
@@ -451,9 +407,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/dashboard/theme/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/dashboard/index.js" />
     <entry file="file://$PROJECT_DIR$/resources/js/dashboard/dashboard-app.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -463,13 +416,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/dashboard/Routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/dashboard/components/RouteWithLayout/RouteWithLayout.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -491,9 +438,6 @@
           <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/dashboard/views/ProductList/components/ProductCard/ProductCard.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/dashboard/views/ProductList/components/ProductsToolbar/ProductsToolbar.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -522,9 +466,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -567,9 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
           <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -577,9 +515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -597,16 +532,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/dashboard/views/UserList/Table/Table.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="49" column="53" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/dashboard/views/UserList/Table/Table.js" />
     <entry file="file://$PROJECT_DIR$/webpack.mix.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -614,16 +540,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/dashboard/helpers/getInitials.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/dashboard/views/SignUp/SignUp.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-          <folding>
-            <element signature="e#1076#2916#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -662,28 +582,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/dashboard/views/UserList/UserList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/dashboard/views/UserList/UserList.js" />
     <entry file="file://$PROJECT_DIR$/resources/js/dashboard/helpers/View.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/logos/logo--white.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/logos/logo.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
   <component name="masterDetails">

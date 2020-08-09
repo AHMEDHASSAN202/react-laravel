@@ -6,6 +6,7 @@ import { Divider, Drawer } from '@material-ui/core';
 import modules from './.../../../../../../pages';
 
 import { Profile, SidebarNav } from './components';
+import Footer from '../Footer';
 
 const useStyles = makeStyles(theme => ({
   drawer: {
@@ -53,6 +54,8 @@ const Sidebar = props => {
           className={classes.nav}
           modules={modules}
         />
+        <Divider className={classes.divider} />
+        <Footer />
       </div>
       </Drawer>
   );

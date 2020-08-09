@@ -1,12 +1,10 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/styles';
 import { useMediaQuery } from '@material-ui/core';
 
-import { Sidebar, Topbar, Footer } from './components';
-import { AppContext } from '../../AppContext';
-import { PAGE_LOADING } from '../../actions';
+import { Sidebar, Topbar } from './components';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -32,11 +30,6 @@ const Main = props => {
   const isDesktop = useMediaQuery(theme.breakpoints.up('lg'), {
     defaultMatches: true
   });
-  const {dispatch} = useContext(AppContext);
-
-  useEffect(() => {
-    dispatch({TYPE: PAGE_LOADING, payload: false});
-  }, []);
 
   const [openSidebar, setOpenSidebar] = useState(false);
 
@@ -65,7 +58,6 @@ const Main = props => {
       />
       <main className={classes.content}>
         {children}
-        <Footer />
       </main>
     </div>
   );

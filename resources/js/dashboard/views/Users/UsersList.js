@@ -8,8 +8,8 @@ class UsersListView extends View {
 
     title = 'Users';
 
-    constructor(props) {
-        super(props);
+    constructor(props, context) {
+        super(props, context);
         this.state = {
             users: mockData
         }

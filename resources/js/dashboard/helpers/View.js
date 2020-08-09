@@ -8,12 +8,19 @@ export default class View extends React.Component {
 
     static contextType = AppContext;
     
-    constructor(props) {
-        super(props);
+    constructor(props, context) {
+        super(props, context);
+        this.context.dispatch({TYPE: PAGE_LOADING, payload: true});
     }
 
     componentDidMount() {
+        this.context.dispatch({TYPE: PAGE_LOADING, payload: false});
         this.setPageTitle(this.title);
+        this.init();
+    }
+
+    componentWillUnmount() {
+        this.destroy();
     }
 
     setPageTitle(title) {
@@ -27,5 +34,9 @@ export default class View extends React.Component {
     setFavicon(path) {
         document.querySelector('link[rel="icon"]').href = path;
     }
+
+    init() {}
+
+    destroy() {}
 
 }
