@@ -22,7 +22,8 @@ const useStyles = makeStyles(theme => ({
   },
   buttonsBox: {
     display: 'flex',
-    justifyContent: 'flex-end'
+    justifyContent: 'flex-start',
+    flexDirection: 'row-reverse'
   },
   btn: {
     margin: 5

@@ -1,3 +1,5 @@
+import { getDirection } from "./helpers/functions";
+
 //initial app state
 export const AppState = {
     title: "React",
@@ -7,4 +9,5 @@ export const AppState = {
     all_checked: [],
     pageLoading: false,
     sectionLoading: false,
+    dir: getDirection()
 };

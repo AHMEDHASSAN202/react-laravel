@@ -28,6 +28,11 @@ validate.validators = {
   ...validators
 };
 
+const RoutingSystem = () => (
+  <Router history={browserHistory}>
+    <Routes />
+  </Router>
+);
 
 export default () => {
 
@@ -36,11 +41,7 @@ export default () => {
   return (
     <ThemeProvider theme={theme}>
       <AppContext.Provider value={{data, dispatch}}>
-        <RTL>
-          <Router history={browserHistory}>
-            <Routes />
-          </Router>
-        </RTL>
+        {data.dir == 'rtl' ? <RTL><RoutingSystem /></RTL> : <RoutingSystem />}
       </AppContext.Provider>
     </ThemeProvider>
   );

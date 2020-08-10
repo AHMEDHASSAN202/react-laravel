@@ -12,6 +12,7 @@ import {
   SettingsView,
   NotFoundView,
 } from './views';
+import LanguagesListView from './views/Localization/Languages/LanguagesList';
 
 const Routes = () => {
   return (
@@ -146,7 +147,7 @@ const Routes = () => {
       {/* END Media Routes */}
        {/* Localization Routes */}
        <RouteWithLayout
-        component={DashboardView}
+        component={LanguagesListView}
         exact
         layout={MainLayout}
         path="/dashboard/languages"

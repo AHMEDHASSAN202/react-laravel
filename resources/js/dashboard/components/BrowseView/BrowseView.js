@@ -4,11 +4,9 @@ import Toolbar from './Toolbar';
 import ViewTitle from './../ViewTitle/ViewTitle';
 import LinearProgress from '@material-ui/core/LinearProgress';
 import { AppContext } from '../../AppContext';
+import ViewWrapper from '../ViewWrapper';
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    padding: theme.spacing(3)
-  },
   content: {
     marginTop: theme.spacing(2)
   }
@@ -20,13 +18,13 @@ export default props => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <ViewWrapper>
       <ViewTitle title={title} />
       <ToolbarComponent {...rest} />
       <div className={classes.content}>
       {data.sectionLoading ? <LinearProgress /> : ''}
           { props.children }
       </div>
-    </div>
+    </ViewWrapper>
   );
 };

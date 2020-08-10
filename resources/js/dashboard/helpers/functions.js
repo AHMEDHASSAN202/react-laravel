@@ -10,3 +10,8 @@ export function isUrl(link, path = location.pathname) {
     }
     return false;
 };
+
+export function getDirection() {
+    let dir = document.body.getAttribute('dir');
+    return dir ? dir : 'ltr';
+}
