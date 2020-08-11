@@ -49,7 +49,7 @@ export default props => {
                   <TableCell>Name</TableCell>
                   <TableCell>Code</TableCell>
                   <TableCell>Direction</TableCell>
-                  <TableCell>Default</TableCell>
+                  <TableCell>Display Front</TableCell>
                   <TableCell>Actions</TableCell>
                 </TableRow>
               </TableHead>
@@ -67,7 +67,7 @@ export default props => {
                     </TableCell>
                     <TableCell>{d.code}</TableCell>
                     <TableCell>{d.direction}</TableCell>
-                    <TableCell>{d.default}</TableCell>
+                    <TableCell>{d.display_front}</TableCell>
                     <TableCell>
                         <IconButton aria-label="EDIT" onClick={ (e) => handleClickEdit(e, d)}>
                             <EditIcon fontSize="small" />

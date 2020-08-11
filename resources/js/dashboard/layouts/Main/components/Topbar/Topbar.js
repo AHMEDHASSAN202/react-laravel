@@ -8,6 +8,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import NotificationsIcon from '@material-ui/icons/NotificationsOutlined';
 import InputIcon from '@material-ui/icons/Input';
 import DropDownMenu from './../../../../components/DropDownMenu/DropDownMenu';
+import SelectComponent from '../../../../components/Inputs/SelectComponent';
+import { getLanguages, getCurrentLanguage } from '../../../../helpers/functions';
 
 
 const useStyles = makeStyles(theme => ({
@@ -22,6 +24,11 @@ const useStyles = makeStyles(theme => ({
   },
   logo: {
     color: "#ffffff"
+  },
+  lang: {
+    '& > *': {
+      color: '#fff',
+    }
   }
 }));
 
@@ -36,16 +43,17 @@ const Topbar = props => {
     'Hide sensitive notification content',
     'Hide all notification content',
   ]);
-  
+
 
   const [anchorEl, setAnchorEl] = React.useState(null);
-
+  const languages = getLanguages();
+  const [currentLanguage, setCurrentLanguges] = React.useState(getCurrentLanguage());
 
   const handleClickIconButton = (event) => {
     setAnchorEl(event.currentTarget);
   };
 
-  
+
   const handleMenuItemClick = (event, index) => {
     setAnchorEl(null);
   };
@@ -53,6 +61,11 @@ const Topbar = props => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const handleLangChange = (e) => {
+    //send request for set current user language
+    //refresh window 
+  }
 
   return (
     <AppBar
@@ -68,23 +81,27 @@ const Topbar = props => {
           {/* <Typography variant="h2" className={classes.logo}>eCommerce</Typography> */}
         </RouterLink>
         <div className={classes.flexGrow} />
-        <Hidden mdDown>
-          <IconButton color="inherit" aria-haspopup="true" aria-controls="notification-menu" aria-label="Open Notificattion"
-          onClick={handleClickIconButton} >
-            <Badge
-              badgeContent={notifications.length}
-              color="secondary"
-            >
-              <NotificationsIcon />
-            </Badge>
-          </IconButton>
-          <IconButton
-            className={classes.signOutButton}
-            color="inherit"
+
+        <IconButton
+              color="inherit"
           >
-            <InputIcon />
+              <SelectComponent options={languages} handleChange={handleLangChange} value={currentLanguage.value} className={classes.lang} />
           </IconButton>
-        </Hidden>
+        <IconButton color="inherit" aria-haspopup="true" aria-controls="notification-menu" aria-label="Open Notificattion"
+                    onClick={handleClickIconButton} >
+            <Badge
+                badgeContent={notifications.length}
+                color="secondary"
+            >
+                <NotificationsIcon />
+            </Badge>
+        </IconButton>
+        <IconButton
+              className={classes.signOutButton}
+              color="inherit"
+          >
+              <InputIcon />
+          </IconButton>
         <Hidden lgUp>
           <IconButton
             color="inherit"
@@ -93,12 +110,12 @@ const Topbar = props => {
             <MenuIcon />
           </IconButton>
         </Hidden>
-        <DropDownMenu 
+        <DropDownMenu
           id={"notification-menu"}
-          options={notifications} 
-          anchorEl={anchorEl} 
-          handleMenuItemClick={handleMenuItemClick} 
-          handleClose={handleClose} 
+          options={notifications}
+          anchorEl={anchorEl}
+          handleMenuItemClick={handleMenuItemClick}
+          handleClose={handleClose}
         />
       </Toolbar>
     </AppBar>

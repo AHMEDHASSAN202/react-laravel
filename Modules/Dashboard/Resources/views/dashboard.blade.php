@@ -6,8 +6,9 @@
         <title>React dashboard</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        @include('dashboard::load')
     </head>
-    <body dir="ltr">
+    <body dir="{{ $currentLanguage->direction }}">
         <div id="app"></div>
         <script src="{{ asset('js/dashboard-app.js') }}"></script>
     </body>

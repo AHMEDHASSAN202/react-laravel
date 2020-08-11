@@ -33,9 +33,9 @@ class LanguagesListView extends View {
                 name: '',
                 code: '',
                 direction: 'ltr',
-                default: false,
+                display_front: false,
             },
-            submitLoading: true
+            submitLoading: false
         }
     }
 
@@ -65,7 +65,7 @@ class LanguagesListView extends View {
 
     handleChangeCheckbox = () => {
         let {form} = this.state;
-        form.default = !form.default;
+        form.display_front = !form.display_front;
         this.setState({...this.state, form});
     }
 
@@ -109,7 +109,7 @@ class LanguagesListView extends View {
                     variant="outlined"
                 />
                 <SelectComponent label="Direction" name="direction" options={this.options} value={this.state.form.direction} handleChange={this.handleChange} />
-                <CheckboxComponent label="Default" name="default" checked={this.state.form.default} handleChange={this.handleChangeCheckbox} />
+                <CheckboxComponent label="Display Front" name="display_front" checked={this.state.form.display_front} handleChange={this.handleChangeCheckbox} />
                 </CardContent>
                 <Divider style={{width: '100%'}} />
                 <CardActions>

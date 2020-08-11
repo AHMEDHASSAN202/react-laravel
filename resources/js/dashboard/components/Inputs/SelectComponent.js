@@ -3,11 +3,12 @@ import { FormControl, InputLabel, Select, MenuItem } from '@material-ui/core';
 
 
 const SelectComponent = (props) => {
-    const {options, handleChange, value, name, label} = props;
+    const {options, handleChange, value, name=null, label=null, ...rest} = props;
     return (
         <FormControl fullWidth>
-            <InputLabel id={label}>Direction</InputLabel>
+            {label != null ? <InputLabel id={label}>{label}</InputLabel> : ''}
             <Select
+            {...rest}
             labelId={label}
             name={name}
             value={value}

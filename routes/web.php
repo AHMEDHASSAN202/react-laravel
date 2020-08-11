@@ -14,12 +14,3 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/', 'welcome');
-
-Route::view('dashboard/login', 'dashboard-login')
-      ->middleware('guest')
-      ->name('login');
-
-Route::view('dashboard/{path?}', 'dashboard')
-//      ->middleware('auth')
-      ->where('path', '.*')
-      ->name('dashboard');

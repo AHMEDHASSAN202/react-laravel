@@ -6,13 +6,13 @@ export default [
     name: 'Engilsh',
     code: 'en',
     direction: 'ltr',
-    default: 'yes'
+    display_front: 'yes'
   },
   {
     id: uuid(),
     name: 'Arabic',
     code: 'ar',
     direction: 'rtl',
-    default: 'no'
+    display_front: 'no'
   },
 ];

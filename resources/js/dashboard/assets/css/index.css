@@ -22,3 +22,7 @@ a {
 #root {
   height: 100%;
 }
+
+.makeStyles-lang-8.MuiInput-underline:before {
+  display: none;
+}
