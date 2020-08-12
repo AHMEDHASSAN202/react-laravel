@@ -27,8 +27,13 @@ export function getCurrentLanguage() {
     return handleLang(window.currentLanguage);
 }
 
-function handleLang(lang) {
-    lang.label = lang.name;
-    lang.value = lang.code; 
+export function handleLang(lang) {
+    lang.label = lang.language_name;
+    lang.value = lang.language_code; 
     return lang;
 } 
+
+export function getDirectionLabel(direction) {
+    if (direction == null || direction == 'rtl') return 'Right To Left';
+    return 'Left To Right'
+}

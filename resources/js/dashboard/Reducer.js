@@ -1,4 +1,4 @@
-import { ALL_CHECKED, PAGE_LOADING, SECTION_LOADING } from "./actions";
+import { ALL_CHECKED, PAGE_LOADING, SECTION_LOADING, ADD_LANGUAGE } from "./actions";
 
 export const Reducer = (state, action) => {
     switch (action.TYPE) {
@@ -7,7 +7,11 @@ export const Reducer = (state, action) => {
         case PAGE_LOADING:
             return {...state, pageLoading: action.payload}
         case SECTION_LOADING:
-            return {...state, sectionLoading: action.payload}       
+            return {...state, sectionLoading: action.payload}    
+        case ADD_LANGUAGE: 
+            let langs = state.languages;
+            langs.push(action.payload);
+            return {...state, languages: langs}       
         default:
             return state;
     }

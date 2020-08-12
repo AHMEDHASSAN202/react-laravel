@@ -10,6 +10,7 @@ import InputIcon from '@material-ui/icons/Input';
 import DropDownMenu from './../../../../components/DropDownMenu/DropDownMenu';
 import SelectComponent from '../../../../components/Inputs/SelectComponent';
 import { getLanguages, getCurrentLanguage } from '../../../../helpers/functions';
+import { AppContext } from '../../../../AppContext';
 
 
 const useStyles = makeStyles(theme => ({
@@ -46,8 +47,7 @@ const Topbar = props => {
 
 
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const languages = getLanguages();
-  const [currentLanguage, setCurrentLanguges] = React.useState(getCurrentLanguage());
+  const {data} = React.useContext(AppContext);
 
   const handleClickIconButton = (event) => {
     setAnchorEl(event.currentTarget);
@@ -85,7 +85,7 @@ const Topbar = props => {
         <IconButton
               color="inherit"
           >
-              <SelectComponent options={languages} handleChange={handleLangChange} value={currentLanguage.value} className={classes.lang} />
+              <SelectComponent options={data.languages} handleChange={handleLangChange} value={data.currentLanguage.value} className={classes.lang} />
           </IconButton>
         <IconButton color="inherit" aria-haspopup="true" aria-controls="notification-menu" aria-label="Open Notificattion"
                     onClick={handleClickIconButton} >

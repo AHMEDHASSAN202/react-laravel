@@ -2,26 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a874a964-1319-42e3-8626-0b563ff7fcab" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ReactDashboard.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ReactDashboard.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Users/Database/Migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Users/Database/Migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Dashboard/Repositories/DashboardRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Dashboard/Repositories/DashboardRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Dashboard/Resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Dashboard/Resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Localization/Database/Migrations/2020_08_10_121009_create_languages_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Localization/Database/Migrations/2020_08_10_121009_create_languages_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Localization/Database/Seeders/LanguagesDatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Localization/Database/Seeders/LanguagesDatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Localization/Database/Seeders/LocalizationDatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Localization/Database/Seeders/LocalizationDatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Settings/Database/Seeders/SettingsDatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Settings/Database/Seeders/SettingsDatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Users/Database/Migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Users/Database/Migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/dashboard-app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/dashboard-app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/assets/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/assets/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/components/Inputs/SelectComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/components/Inputs/SelectComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/AppState.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/AppState.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/Reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/Reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/components/BrowseView/BrowseView.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/components/BrowseView/BrowseView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/dashboard/helpers/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/helpers/functions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/dashboard/layouts/Main/components/Topbar/Topbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/layouts/Main/components/Topbar/Topbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/dashboard/views/Localization/Languages/LanguagesList.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/views/Localization/Languages/LanguagesList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/dashboard/views/Localization/Languages/Table/Table.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/views/Localization/Languages/Table/Table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/dashboard/views/Localization/Languages/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dashboard/views/Localization/Languages/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard-login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Dashboard/Resources/views/dashboard-login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Dashboard/Resources/views/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,62 +47,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DashboardRepository.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Modules/Dashboard/Repositories/DashboardRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="load.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Modules/Dashboard/Resources/views/load.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="53" lean-forward="true" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DashboardController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Modules/Dashboard/Http/Controllers/DashboardController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Modules/Dashboard/Resources/views/dashboard.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/app.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="Topbar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/dashboard/layouts/Main/components/Topbar/Topbar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="97" selection-start-line="97" selection-end-line="97" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-                <element signature="e#2131#2278#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -123,8 +67,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/webpack.mix.js" />
-        <option value="$PROJECT_DIR$/resources/js/dashboard/bootstrap.js" />
         <option value="$PROJECT_DIR$/resources/js/dashboard/app.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/resources/js/dashboard/dashboard-app.js" />
@@ -155,9 +97,6 @@
         <option value="$PROJECT_DIR$/Modules/Localization/Repositories/LocalizationRepository.php" />
         <option value="$PROJECT_DIR$/Modules/Localization/Http/Controllers/LanguagesController.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/Modules/Localization/Database/Migrations/2020_08_10_121009_create_languages_table.php" />
-        <option value="$PROJECT_DIR$/Modules/Localization/Database/Seeders/LanguagesDatabaseSeeder.php" />
-        <option value="$PROJECT_DIR$/Modules/Localization/Database/Seeders/LocalizationDatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/config/modules.php" />
         <option value="$PROJECT_DIR$/modules_statuses.json" />
         <option value="$PROJECT_DIR$/Modules/Settings/Providers/RouteServiceProvider.php" />
@@ -167,8 +106,18 @@
         <option value="$PROJECT_DIR$/Modules/Dashboard/Http/Controllers/DashboardController.php" />
         <option value="$PROJECT_DIR$/resources/js/dashboard/layouts/Main/components/Topbar/Topbar.js" />
         <option value="$PROJECT_DIR$/Modules/Dashboard/Resources/views/load.blade.php" />
-        <option value="$PROJECT_DIR$/Modules/Dashboard/Resources/views/dashboard.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Settings/Database/Migrations/2020_08_11_175602_create_settings_table.php" />
+        <option value="$PROJECT_DIR$/Modules/Localization/Database/Migrations/2020_08_10_121009_create_languages_table.php" />
+        <option value="$PROJECT_DIR$/Modules/Localization/Database/Seeders/LanguagesDatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/Modules/Users/Database/Migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/Modules/Settings/Database/Seeders/SettingsDatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/Modules/Settings/Database/Migrations/2020_08_11_175602_create_options_table.php" />
+        <option value="$PROJECT_DIR$/Modules/Settings/Database/Seeders/OptionsTableSeeder.php" />
         <option value="$PROJECT_DIR$/Modules/Dashboard/Repositories/DashboardRepository.php" />
+        <option value="$PROJECT_DIR$/Modules/Dashboard/Resources/views/dashboard.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Localization/Database/Migrations/2020_08_12_013449_create_translations_table.php" />
+        <option value="$PROJECT_DIR$/Modules/Localization/Database/Seeders/TranslationsTableSeeder.php" />
+        <option value="$PROJECT_DIR$/Modules/Localization/Database/Seeders/LocalizationDatabaseSeeder.php" />
       </list>
     </option>
   </component>
@@ -303,10 +252,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1040" />
-    <option name="height" value="754" />
+    <option name="x" value="32" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -319,44 +267,6 @@
             <path>
               <item name="ReactDashboard" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReactDashboard" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ReactDashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReactDashboard" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ReactDashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReactDashboard" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ReactDashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReactDashboard" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Dashboard" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ReactDashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReactDashboard" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Dashboard" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Repositories" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ReactDashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReactDashboard" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Dashboard" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ReactDashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReactDashboard" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Dashboard" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -387,6 +297,7 @@
       <recent name="E:\Laravel\ReactDashboard\resources\js\dashboard" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Laravel\ReactDashboard\storage\app\public" />
       <recent name="E:\Laravel\ReactDashboard\Modules\Dashboard\Routes" />
       <recent name="E:\Laravel\ReactDashboard\Modules\Localization\Database\Seeders" />
       <recent name="E:\Laravel\ReactDashboard\public\images\logos" />
@@ -420,12 +331,12 @@
       <workItem from="1596725930652" duration="5461000" />
       <workItem from="1596975922281" duration="8188000" />
       <workItem from="1597056554246" duration="4275000" />
-      <workItem from="1597141449887" duration="6190000" />
+      <workItem from="1597141449887" duration="17874000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32455000" />
+    <option name="totallyTimeSpent" value="44139000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -438,7 +349,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1040" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32843137" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -446,9 +356,9 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.46732026" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.45751634" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.32959184" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2755102" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2755102" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32959184" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -471,35 +381,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/dashboard/views/UserList/Table/Table.js" />
-    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/dashboard/views/SignUp/SignUp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/dashboard/helpers/validators.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/validate.js/validate.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
@@ -645,32 +526,12 @@
     <entry file="file://$PROJECT_DIR$/database/factories/UserFactory.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Users/Database/Migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-          <folding>
-            <element signature="e#7#52#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Modules/Users/Database/Migrations/2014_10_12_100000_create_password_resets_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
           <folding>
             <element signature="e#7#52#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Localization/Database/Migrations/2020_08_10_121009_create_languages_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-          <folding>
-            <element signature="e#7#45#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -686,23 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Localization/Database/Seeders/LanguagesDatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Localization/Database/Seeders/LocalizationDatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#56#87#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -758,6 +602,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Dashboard/Http/Controllers/DashboardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/dashboard/layouts/Main/components/Topbar/Topbar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="591">
@@ -775,28 +626,96 @@
     <entry file="file://$PROJECT_DIR$/Modules/Dashboard/Resources/views/load.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
-          <caret line="2" column="53" lean-forward="true" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
+          <caret line="2" column="53" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Localization/Database/Seeders/LanguagesDatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="28" column="48" lean-forward="true" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Localization/Database/Migrations/2020_08_10_121009_create_languages_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding>
+            <element signature="e#7#45#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Users/Database/Migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+          <folding>
+            <element signature="e#7#52#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Settings/Database/Seeders/SettingsDatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Settings/Database/Seeders/OptionsTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Settings/Database/Migrations/2020_08_11_175602_create_options_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="15" column="63" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Modules/Dashboard/Resources/views/dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Dashboard/Http/Controllers/DashboardController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Modules/Dashboard/Repositories/DashboardRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state relative-caret-position="320">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#98#141#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Localization/Database/Migrations/2020_08_12_013449_create_translations_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Localization/Database/Seeders/TranslationsTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="90" column="13" lean-forward="true" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Localization/Database/Seeders/LocalizationDatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#56#87#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

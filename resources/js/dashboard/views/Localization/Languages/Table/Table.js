@@ -12,6 +12,8 @@ import {
   IconButton
 } from '@material-ui/core';
 import EditIcon from '@material-ui/icons/Edit';
+import DeleteIcon from '@material-ui/icons/Delete';
+import { getDirectionLabel } from '../../../../helpers/functions';
 
 const useStyles = makeStyles(theme => ({
   root: {},
@@ -31,7 +33,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default props => {
-  const {data, handleClickEdit = null, ...rest} = props;
+  const {data, handleClickEdit = null, handleClickDelate = null, ...rest} = props;
 
   const classes = useStyles();
 
@@ -58,19 +60,22 @@ export default props => {
                   <TableRow
                     className={classes.tableRow}
                     hover
-                    key={d.id}
+                    key={d.language_id}
                   >
                     <TableCell className={classes.cursor}>
                       <div className={classes.nameContainer}>
-                        {d.name}
+                        {d.language_name}
                       </div>
                     </TableCell>
-                    <TableCell>{d.code}</TableCell>
-                    <TableCell>{d.direction}</TableCell>
-                    <TableCell>{d.display_front}</TableCell>
+                    <TableCell>{d.language_code}</TableCell>
+                    <TableCell>{getDirectionLabel(d.language_direction)}</TableCell>
+                    <TableCell>{Number(d.language_display_front)}</TableCell>
                     <TableCell>
                         <IconButton aria-label="EDIT" onClick={ (e) => handleClickEdit(e, d)}>
                             <EditIcon fontSize="small" />
+                        </IconButton>
+                        <IconButton aria-label="DELETE" onClick={ (e) => handleClickDelate(e, d)}>
+                            <DeleteIcon fontSize="small" />
                         </IconButton>
                     </TableCell>
                   </TableRow>

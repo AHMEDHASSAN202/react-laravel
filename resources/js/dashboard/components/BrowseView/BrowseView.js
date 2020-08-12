@@ -22,7 +22,7 @@ export default props => {
       <ViewTitle title={title} />
       <ToolbarComponent {...rest} />
       <div className={classes.content}>
-      {data.sectionLoading ? <LinearProgress /> : ''}
+          {data.sectionLoading ? <LinearProgress /> : ''}
           { props.children }
       </div>
     </ViewWrapper>

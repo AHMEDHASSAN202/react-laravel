@@ -1,7 +1,6 @@
 import React from 'react';
-import mockData from './data';
 import View from "../../../helpers/View";
-import { SECTION_LOADING } from '../../../actions';
+import { SECTION_LOADING, ADD_LANGUAGE } from '../../../actions';
 import Table from './Table';
 import BrowseSmallTableView from '../../../components/BrowseSmallTable/BrowseSmallTableView';
 import {CardHeader, CardContent, Divider, CardActions, TextField, FormControlLabel, Checkbox, FormControl, InputLabel, Select, MenuItem } from '@material-ui/core';
@@ -9,7 +8,7 @@ import ButtonLoading from '../../../components/ButtonLoading/ButtonLoading';
 import { withStyles } from '@material-ui/styles';
 import SelectComponent from '../../../components/Inputs/SelectComponent';
 import CheckboxComponent from '../../../components/Inputs/CheckboxComponent';
-
+import { handleLang } from './../../../helpers/functions';
 
 const style = (theme) => {
     return {
@@ -28,7 +27,6 @@ class LanguagesListView extends View {
     constructor(props, context) {
         super(props, context);
         this.state = {
-            languages: [],
             form: {
                 name: '',
                 code: '',
@@ -52,8 +50,14 @@ class LanguagesListView extends View {
         console.log(lang);
     }
 
+    handleClickDelate = (e, lang) => {
+        console.log(lang);
+    }
+
     handleButtonClick = (e) => {
-        console.log(e);
+        let lang = handleLang(this.state.form);
+        lang.id = Math.random();
+        this.context.dispatch({TYPE: ADD_LANGUAGE, payload: lang})
     };
 
     handleChange = (e) => {
@@ -73,7 +77,6 @@ class LanguagesListView extends View {
         this.context.dispatch({TYPE: SECTION_LOADING, payload: true});
         setTimeout(() => {
             this.context.dispatch({TYPE: SECTION_LOADING, payload: false});
-            this.setState({languages: mockData})
         }, 2000);
     }
 
@@ -81,8 +84,8 @@ class LanguagesListView extends View {
         return (
             <BrowseSmallTableView 
             title={this.title} 
-            Table={<Table data={this.state.languages} 
-            handleClickEdit={this.handleClickEdit}/>} 
+            Table={<Table data={this.context.data.languages} 
+            handleClickEdit={this.handleClickEdit} handleClickDelate={this.handleDeleteClick} />} 
             >
                 <CardHeader
                     title="Create Language"

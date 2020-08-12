@@ -16,5 +16,6 @@ class LocalizationDatabaseSeeder extends Seeder
         Model::unguard();
 
          $this->call(LanguagesDatabaseSeeder::class);
+         $this->call(TranslationsTableSeeder::class);
     }
 }

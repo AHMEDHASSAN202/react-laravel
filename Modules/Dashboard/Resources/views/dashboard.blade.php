@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
         @include('dashboard::load')
     </head>
-    <body dir="{{ $currentLanguage->direction }}">
+    <body dir="{{ $currentLanguage->language_direction }}">
         <div id="app"></div>
         <script src="{{ asset('js/dashboard-app.js') }}"></script>
     </body>

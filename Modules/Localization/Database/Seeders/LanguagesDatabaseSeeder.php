@@ -18,15 +18,15 @@ class LanguagesDatabaseSeeder extends Seeder
         Model::unguard();
         Language::insert([
             [
-                'name'          =>  'English',
-                'code'          => 'en',
-                'direction'     => 'ltr',
-                'display_front' => true
+                'language_name'          =>  'English',
+                'language_code'          => 'en',
+                'language_direction'     => 'ltr',
+                'language_display_front' => true
             ], [
-                'name'          =>  'عربي',
-                'code'          => 'ar',
-                'direction'     => 'rtl',
-                'display_front' => true
+                'language_name'          =>  'عربي',
+                'language_code'          => 'ar',
+                'language_direction'     => 'rtl',
+                'language_display_front' => true
             ]
         ]);
     }

@@ -13,6 +13,7 @@ import {
   NotFoundView,
 } from './views';
 import LanguagesListView from './views/Localization/Languages/LanguagesList';
+import TranslationList from './views/Localization/Translation/TranslationList';
 
 const Routes = () => {
   return (
@@ -153,7 +154,7 @@ const Routes = () => {
         path="/dashboard/languages"
       />
       <RouteWithLayout
-        component={DashboardView}
+        component={TranslationList}
         exact
         layout={MainLayout}
         path="/dashboard/translations"
