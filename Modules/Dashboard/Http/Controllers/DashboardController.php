@@ -2,7 +2,6 @@
 
 namespace Modules\Dashboard\Http\Controllers;
 
-use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Modules\Dashboard\Repositories\DashboardRepository;
@@ -17,11 +16,13 @@ class DashboardController extends Controller
         $this->dashboardRepository = $dashboardRepository;
     }
 
-    public function loadMainView()
+    public function loadMainView(Request $request)
     {
-        $data = $this->dashboardRepository->load();
+        $data = $this->dashboardRepository->load($request);
 
         return view('dashboard::dashboard', $data);
     }
+
+
 
 }

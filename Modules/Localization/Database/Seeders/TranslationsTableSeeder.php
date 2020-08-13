@@ -50,8 +50,13 @@ class TranslationsTableSeeder extends Seeder
             ],
             [
                 'translation_key'       => 'dashboard::store_approvals',
-                'translation_value'     => 'موافقات المتاجر',
+                'translation_value'     => 'Store Approvals',
                 'translation_lang'      => 'en',
+            ],
+            [
+                'translation_key'       => 'dashboard::store_approvals',
+                'translation_value'     => 'موافقات المتاجر',
+                'translation_lang'      => 'ar',
             ],
             [
                 'translation_key'       => 'dashboard::catalog',
@@ -67,6 +72,11 @@ class TranslationsTableSeeder extends Seeder
                 'translation_key'       => 'dashboard::products',
                 'translation_value'     => 'Products',
                 'translation_lang'      => 'en',
+            ],
+            [
+                'translation_key'       => 'dashboard::products',
+                'translation_value'     => 'المنتجات',
+                'translation_lang'      => 'ar',
             ],
             [
                 'translation_key'       => 'dashboard::categories',
@@ -406,6 +416,86 @@ class TranslationsTableSeeder extends Seeder
             [
                 'translation_key'       => 'dashboard::actions',
                 'translation_value'     => 'الاجراءات',
+                'translation_lang'      => 'ar',
+            ],
+            [
+                'translation_key'       => 'dashboard::search',
+                'translation_value'     => 'Search',
+                'translation_lang'      => 'en',
+            ],
+            [
+                'translation_key'       => 'dashboard::search',
+                'translation_value'     => 'بحث',
+                'translation_lang'      => 'ar',
+            ],
+            [
+                'translation_key'       => 'dashboard::name',
+                'translation_value'     => 'Name',
+                'translation_lang'      => 'en',
+            ],
+            [
+                'translation_key'       => 'dashboard::name',
+                'translation_value'     => 'الاسم',
+                'translation_lang'      => 'ar',
+            ],
+            [
+                'translation_key'       => 'dashboard::email',
+                'translation_value'     => 'Email',
+                'translation_lang'      => 'en',
+            ],
+            [
+                'translation_key'       => 'dashboard::email',
+                'translation_value'     => 'البريد الالكتروني',
+                'translation_lang'      => 'ar',
+            ],
+            [
+                'translation_key'       => 'dashboard::location',
+                'translation_value'     => 'Location',
+                'translation_lang'      => 'en',
+            ],
+            [
+                'translation_key'       => 'dashboard::location',
+                'translation_value'     => 'الموقع',
+                'translation_lang'      => 'ar',
+            ],
+            [
+                'translation_key'       => 'dashboard::phone',
+                'translation_value'     => 'Phone',
+                'translation_lang'      => 'en',
+            ],
+            [
+                'translation_key'       => 'dashboard::phone',
+                'translation_value'     => 'الهاتف',
+                'translation_lang'      => 'ar',
+            ],
+            [
+                'translation_key'       => 'dashboard::registration_date',
+                'translation_value'     => 'Registration date',
+                'translation_lang'      => 'en',
+            ],
+            [
+                'translation_key'       => 'dashboard::registration_date',
+                'translation_value'     => 'تاريخ التسجيل',
+                'translation_lang'      => 'ar',
+            ],
+            [
+                'translation_key'       => 'dashboard::view',
+                'translation_value'     => 'View',
+                'translation_lang'      => 'en',
+            ],
+            [
+                'translation_key'       => 'dashboard::view',
+                'translation_value'     => 'عرض',
+                'translation_lang'      => 'ar',
+            ],
+            [
+                'translation_key'       => 'dashboard::view_all',
+                'translation_value'     => 'View all',
+                'translation_lang'      => 'en',
+            ],
+            [
+                'translation_key'       => 'dashboard::view_all',
+                'translation_value'     => 'عرض الكل',
                 'translation_lang'      => 'ar',
             ]
         ]);

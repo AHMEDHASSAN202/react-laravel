@@ -127,7 +127,19 @@ const Routes = () => {
         component={DashboardView}
         exact
         layout={MainLayout}
-        path="/dashboard/coupons"
+        path="/dashboard/marketing/coupons"
+      />
+      <RouteWithLayout
+        component={DashboardView}
+        exact
+        layout={MainLayout}
+        path="/dashboard/marketing/mail"
+      />
+      <RouteWithLayout
+        component={DashboardView}
+        exact
+        layout={MainLayout}
+        path="/dashboard/marketing/whatsapp"
       />
       {/* END Coupon Routes */}
       {/* Pages Routes */}

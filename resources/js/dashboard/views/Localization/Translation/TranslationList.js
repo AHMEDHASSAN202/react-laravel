@@ -2,12 +2,10 @@ import React from 'react';
 import View from "../../../helpers/View";
 import { SECTION_LOADING } from '../../../actions';
 import Table from './Table';
-import ButtonLoading from '../../../components/ButtonLoading/ButtonLoading';
 import { withStyles } from '@material-ui/styles';
-import PageComponent from './../../../components/PageComponent';
-
-import data from './data';
-import { LinearProgress } from '@material-ui/core';
+import BrowseView from '../../../components/BrowseView/BrowseView';
+import ToolbarWithSearch from './../../../components/BrowseView/ToolbarWithSearch';
+import { mapObject } from '../../../helpers/functions';
 
 const style = (theme) => {
     return {
@@ -25,18 +23,24 @@ class TranslationListView extends View {
 
     constructor(props, context) {
         super(props, context);
-        this.state = {translations: data}
+        this.state = {translationsSearch: context.data.translations}
+    }
+    
+    handleChangeInputSearch = (event) => {
+        let {value} = event.target;
+        if (value == '') {
+            return this.setState({translationsSearch: this.context.data.translations})
+        }
+        let search = {};
+        const {translations} = this.context.data;
+        mapObject(translations, (key, val) => {
+            if (key.indexOf(value) !== -1) {
+                search[key] = val;
+            }
+        })
+        this.setState({translationsSearch: search});
     }
 
-    handleChangeInput = (e, i, languageCode) => {
-        let translations = [...this.state.translations];
-        translations[i][languageCode] = e.target.value;
-        this.setState({translations})
-    }
-
-    handleUpdate = (row) => {
-        console.log(row)
-    }
 
     init() {
         this.context.dispatch({TYPE: SECTION_LOADING, payload: true});
@@ -47,12 +51,12 @@ class TranslationListView extends View {
 
     render () {
         return (
-            <PageComponent
-                title={this.title}
-            >
-                {this.context.data.sectionLoading ? <LinearProgress /> : ''}
-                <Table data={this.state.translations} languages={this.context.data.languages} handleChangeInput={this.handleChangeInput} handleUpdate={this.handleUpdate} />
-            </PageComponent>
+            <BrowseView title={this.title} ToolbarComponent={ToolbarWithSearch} handleChangeInputSearch={this.handleChangeInputSearch}>
+                <Table 
+                    data={this.state.translationsSearch} 
+                    languages={this.context.data.languages} 
+                />
+            </BrowseView>   
         );
     }
 }

@@ -15,10 +15,6 @@ class UsersListView extends View {
         }
     }
 
-    handleClickRow = (e, user) => {
-        this.props.history.push('/dashboard');
-    }
-
     handleChangeInputSearch = (e) => {
         console.log(e.target.value);
     }
@@ -44,7 +40,7 @@ class UsersListView extends View {
                 handleAddClick={this.handleAddClick}
                 handleDeleteClick={this.handleDeleteClick}
             >
-                <Table data={this.state.users} handleClickRow={this.handleClickRow} handleClickEdit={this.handleClickEdit} />
+                <Table data={this.state.users}  handleClickEdit={this.handleClickEdit} />
             </BrowseView>
         );
     }

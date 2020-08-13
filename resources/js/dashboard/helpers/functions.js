@@ -1,6 +1,6 @@
 export function mapObject(object, callback) {
-    Object.keys.map(key => {
-        callback(key, object[key]);
+    Object.keys(object).map(key => {
+        return callback(key, object[key]);
     });
 }
 
@@ -36,4 +36,8 @@ export function handleLang(lang) {
 export function getDirectionLabel(direction) {
     if (direction == null || direction == 'rtl') return 'Right To Left';
     return 'Left To Right'
+}
+
+export function getTranslations() {
+    return window.translations;
 }

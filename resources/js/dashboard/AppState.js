@@ -1,4 +1,4 @@
-import { getDirection, getLanguages, getCurrentLanguage } from "./helpers/functions";
+import { getDirection, getLanguages, getCurrentLanguage, getTranslations } from "./helpers/functions";
 
 //initial app state
 export const AppState = {
@@ -11,5 +11,6 @@ export const AppState = {
     sectionLoading: false,
     dir: getDirection(),
     languages: getLanguages(),
-    currentLanguage: getCurrentLanguage()
+    currentLanguage: getCurrentLanguage(),
+    translations: getTranslations()
 };

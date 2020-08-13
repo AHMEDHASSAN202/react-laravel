@@ -2,3 +2,4 @@ export const ALL_CHECKED = "ALL_CHECKED";
 export const PAGE_LOADING = "PAGE_LOADING";
 export const SECTION_LOADING = "SECTION_LOADING";
 export const ADD_LANGUAGE = 'ADD_LANGUAGE';
+export const UPDATE_TRANSLATE = 'UPDATE_TRANSLATE';

@@ -7,16 +7,27 @@
 namespace Modules\Dashboard\Repositories;
 
 
-use Modules\Localization\Entities\Language;
-use Modules\Settings\Entities\Option;
+use Illuminate\Http\Request;
+use Modules\Localization\Repositories\LocalizationRepository;
 
 class DashboardRepository
 {
-    public function load()
+    private $localizationRepository;
+
+
+    public function __construct(LocalizationRepository $localizationRepository)
     {
-        $data['languages'] = Language::all();
+        $this->localizationRepository = $localizationRepository;
+    }
+
+    public function load(Request $request)
+    {
+        //get all languages
+        $data['languages'] = $this->localizationRepository->getLanguages($request);
         //get current user language
-        $data['currentLanguage'] = Option::select('*', 'languages.*')->where('option_key', 'default_lang')->join('languages', 'language_code', '=', 'option_value')->first();
+        $data['currentLanguage'] = $this->localizationRepository->getCurrentLanguage($request);
+        //get all translations
+        $data['translations'] = $this->localizationRepository->getTranslations($request);
 
         return $data;
     }

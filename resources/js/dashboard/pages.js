@@ -26,6 +26,10 @@ import PeopleOutlineIcon from '@material-ui/icons/PeopleOutline';
 import PersonAddDisabledIcon from '@material-ui/icons/PersonAddDisabled';
 import SettingsIcon from '@material-ui/icons/Settings';
 import AssessmentIcon from '@material-ui/icons/Assessment';
+import DvrIcon from '@material-ui/icons/Dvr';
+import MailIcon from '@material-ui/icons/Mail';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
+import RedeemIcon from '@material-ui/icons/Redeem';
 
 export default [
     [
@@ -142,9 +146,27 @@ export default [
               ]
         },
         {
-            title: 'Coupons',
-            href: '/dashboard/coupons',
-            icon: <DashboardIcon />
+          title: 'Marketing',
+          href: '#',
+          icon: <DvrIcon />,
+          key: 'marketing',
+          children: [
+            {
+              title: 'Coupons',
+              href: '/dashboard/marketing/coupons',
+              icon: <RedeemIcon />
+            },
+            {
+              title: 'Mail',
+              href: '/dashboard/marketing/mail',
+              icon: <MailIcon />,
+            },
+            {
+              title: 'Whatsapp',
+              href: '/dashboard/marketing/whatsapp',
+              icon: <WhatsAppIcon />,
+            }
+          ]
         },
         {
             title: 'Pages',
