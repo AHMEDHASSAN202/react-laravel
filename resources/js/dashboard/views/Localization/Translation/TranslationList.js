@@ -1,11 +1,10 @@
 import React from 'react';
 import View from "../../../helpers/View";
-import { SECTION_LOADING } from '../../../actions';
 import Table from './Table';
 import { withStyles } from '@material-ui/styles';
 import BrowseView from '../../../components/BrowseView/BrowseView';
 import ToolbarWithSearch from './../../../components/BrowseView/ToolbarWithSearch';
-import { mapObject } from '../../../helpers/functions';
+import { SECTION_LOADING } from '../../../actions';
 
 const style = (theme) => {
     return {
@@ -23,38 +22,63 @@ class TranslationListView extends View {
 
     constructor(props, context) {
         super(props, context);
-        this.state = {translationsSearch: context.data.translations}
+        this.state = {
+            translations: Object.keys(context.data.translations),
+            translationsFilters: Object.keys(context.data.translations),
+        }
     }
     
     handleChangeInputSearch = (event) => {
         let {value} = event.target;
         if (value == '') {
-            return this.setState({translationsSearch: this.context.data.translations})
+            return this.setState({translationsFilters: this.state.translations})
         }
-        let search = {};
-        const {translations} = this.context.data;
-        mapObject(translations, (key, val) => {
-            if (key.indexOf(value) !== -1) {
-                search[key] = val;
+        let search = [];
+        this.state.translations.map(val => {
+            if (val.indexOf(value) !== -1) {
+                search.push(val);
             }
         })
-        this.setState({translationsSearch: search});
+        this.setState({translationsFilters: search});
     }
 
+    generatePagination = (perpage, page) => {
+        let offset = perpage * page;
+        let limit = perpage + offset;
+        return this.state.translations.slice(offset, limit)
+    }
+    
+    handlePageChange = (page, perpage) => {
+        this.setPagination(perpage, page);
+    }
+
+    handleRowsPerPageChange = (perpage, page) => {
+        this.setPagination(perpage, page);
+    }
+    
+    setPagination = (perpage, page) => {
+        let d = this.generatePagination(perpage, page);
+        this.setState({translationsFilters: d});
+    }
+    
 
     init() {
+        this.setPagination(10, 0);
         this.context.dispatch({TYPE: SECTION_LOADING, payload: true});
         setTimeout(() => {
             this.context.dispatch({TYPE: SECTION_LOADING, payload: false});
-        }, 2000);
+        }, 1000);
     }
 
     render () {
         return (
             <BrowseView title={this.title} ToolbarComponent={ToolbarWithSearch} handleChangeInputSearch={this.handleChangeInputSearch}>
                 <Table 
-                    data={this.state.translationsSearch} 
-                    languages={this.context.data.languages} 
+                    data={this.state.translationsFilters} 
+                    languages={this.context.data.languages}
+                    handlePageChange={this.handlePageChange}
+                    handleRowsPerPageChange={this.handleRowsPerPageChange}
+                    count={this.state.translations.length}
                 />
             </BrowseView>   
         );

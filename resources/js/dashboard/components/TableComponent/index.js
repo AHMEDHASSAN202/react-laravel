@@ -39,7 +39,7 @@ const useStyles = makeStyles(theme => ({
 export default props => {
   const classes = useStyles();
 
-  const {data, labels=[], handlePageChange, handleRowsPerPageChange, perpage=10, actions=true, hasCheckbox=true, ...rest} = props;
+  const {data, labels=[], handlePageChange, handleRowsPerPageChange, perpage=10, actions=true, hasCheckbox=true, count=null, ...rest} = props;
 
   const [selected, setSelected] = React.useState([]);
 
@@ -139,7 +139,7 @@ export default props => {
             handlePageChange={handlePageChange}
             handleRowsPerPageChange={handleRowsPerPageChange}
             perpage={perpage}
-            count={data.length}
+            count={count || data.length}
         />
       </CardActions>
     </Card>

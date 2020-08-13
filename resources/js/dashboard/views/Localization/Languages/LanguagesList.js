@@ -77,7 +77,7 @@ class LanguagesListView extends View {
         this.context.dispatch({TYPE: SECTION_LOADING, payload: true});
         setTimeout(() => {
             this.context.dispatch({TYPE: SECTION_LOADING, payload: false});
-        }, 2000);
+        }, 1000);
     }
 
     render () {

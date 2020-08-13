@@ -3,8 +3,8 @@ import TableComponent from '../../../../components/TableComponent';
 import TranslateInput from './TranslateInput';
 
 export default props => {
-  const {data, languages,handlePageChange, handleRowsPerPageChange, ...rest} = props;
-  
+  const {data, languages, handlePageChange, handleRowsPerPageChange, count, ...rest} = props;
+
   const labels = [
     {title: 'Key', call: (d) => d}
   ];
@@ -19,12 +19,13 @@ export default props => {
 
   return (
       <TableComponent 
-        data={Object.keys(data)}
+        data={data}
         labels={labels}
         handlePageChange={handlePageChange}
         handleRowsPerPageChange={handleRowsPerPageChange}
         hasCheckbox={false}
         actions={false}
+        count={count}
       />
   );
 };

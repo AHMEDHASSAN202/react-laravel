@@ -12,14 +12,14 @@ export default props => {
   const [page, setPage] = React.useState(0);
 
 
-  const handleChange = (event, page) => {
+  const handleChange = (e, page) => {
     setPage(page);
-    handlePageChange(event, page);
+    handlePageChange(page, rowsPerPage);
   };
 
   const handleRowsPerChange = event => {
     setRowsPerPage(event.target.value);
-    handleRowsPerPageChange(rowsPerPage)
+    handleRowsPerPageChange(event.target.value, page)
   };
 
 
