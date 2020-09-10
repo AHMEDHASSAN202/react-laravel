@@ -33,6 +33,10 @@ export function handleLang(lang) {
     return lang;
 } 
 
+export function getCurrentLanguageCode() {
+    return window.currentLanguage['language_code'];
+}
+
 export function getDirectionLabel(direction) {
     if (direction == null || direction == 'rtl') return 'Right To Left';
     return 'Left To Right'
@@ -40,4 +44,10 @@ export function getDirectionLabel(direction) {
 
 export function getTranslations() {
     return window.translations;
+}
+
+export function translate(key) {
+    const keyTranslations = getTranslations()[key];
+    const keyword = keyTranslations[getCurrentLanguageCode()];
+    return keyword || null;
 }

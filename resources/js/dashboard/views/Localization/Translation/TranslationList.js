@@ -4,7 +4,7 @@ import Table from './Table';
 import { withStyles } from '@material-ui/styles';
 import BrowseView from '../../../components/BrowseView/BrowseView';
 import ToolbarWithSearch from './../../../components/BrowseView/ToolbarWithSearch';
-import { SECTION_LOADING } from '../../../actions';
+import { translate } from '../../../helpers/functions';
 
 const style = (theme) => {
     return {
@@ -18,7 +18,7 @@ const style = (theme) => {
 
 class TranslationListView extends View {
 
-    title = 'Translations';
+    title = translate('dashboard::translations');
 
     constructor(props, context) {
         super(props, context);
@@ -64,10 +64,6 @@ class TranslationListView extends View {
 
     init() {
         this.setPagination(10, 0);
-        this.context.dispatch({TYPE: SECTION_LOADING, payload: true});
-        setTimeout(() => {
-            this.context.dispatch({TYPE: SECTION_LOADING, payload: false});
-        }, 1000);
     }
 
     render () {

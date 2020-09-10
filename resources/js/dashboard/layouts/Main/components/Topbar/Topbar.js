@@ -11,6 +11,8 @@ import DropDownMenu from './../../../../components/DropDownMenu/DropDownMenu';
 import SelectComponent from '../../../../components/Inputs/SelectComponent';
 import { getLanguages, getCurrentLanguage } from '../../../../helpers/functions';
 import { AppContext } from '../../../../AppContext';
+import ChangeLanguageApi from '../../../../views/Dashboard/services/ChangeLanguageService';
+import { pageLoader } from '../../../../actions';
 
 
 const useStyles = makeStyles(theme => ({
@@ -47,7 +49,7 @@ const Topbar = props => {
 
 
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const {data} = React.useContext(AppContext);
+  const {data, dispatch} = React.useContext(AppContext);
 
   const handleClickIconButton = (event) => {
     setAnchorEl(event.currentTarget);
@@ -63,8 +65,13 @@ const Topbar = props => {
   };
 
   const handleLangChange = (e) => {
+    dispatch(pageLoader(true));
     //send request for set current user language
-    //refresh window 
+    ChangeLanguageApi(e.target.value).then(result => {
+      dispatch(pageLoader(false));
+      //refresh window 
+      window.location.reload();
+    });
   }
 
   return (

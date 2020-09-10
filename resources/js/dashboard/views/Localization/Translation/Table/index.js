@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import TableComponent from '../../../../components/TableComponent';
 import TranslateInput from './TranslateInput';
+import { AppContext } from '../../../../AppContext';
 
 export default props => {
   const {data, languages, handlePageChange, handleRowsPerPageChange, count, ...rest} = props;
+  const context = useContext(AppContext);
 
   const labels = [
     {title: 'Key', call: (d) => d}
@@ -13,7 +15,7 @@ export default props => {
     labels.push({
         title: lang.language_name, 
         name: lang.language_code,
-        call: (d) => <TranslateInput languageCode={lang.language_code} d={d} />
+        call: (d) => <TranslateInput languageCode={lang.language_code} d={d} value={context.data.translations[d][lang.language_code]} dispatch={context.dispatch} />
     })
   })
 

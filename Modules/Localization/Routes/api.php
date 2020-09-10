@@ -12,5 +12,13 @@
 */
 
 Route::group(['prefix' => 'localization'], function () {
+
     Route::get('languages', 'LanguagesController@index');
+    Route::put('languages/change', 'LanguagesController@changeLanguage');
+
+    //dashboard routes
+    Route::group(['prefix' => 'dashboard'], function () {
+        Route::put('translations/{translation_key}', 'TranslationsController@updateTranslate');
+    });
+
 });

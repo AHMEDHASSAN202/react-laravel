@@ -1,39 +1,39 @@
-import React, { useContext } from 'react';
+import React, { useState } from 'react';
 import FormControl from '@material-ui/core/FormControl';
 import OutlinedInput from '@material-ui/core/OutlinedInput';
 import IconButton from '@material-ui/core/IconButton';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import DoneIcon from '@material-ui/icons/Done';
-import { AppContext } from '../../../../AppContext';
-import { UPDATE_TRANSLATE } from '../../../../actions';
-import debounce from 'lodash/debounce';
+import { sectionLoader, updateTranslate } from '../../../../actions';
+import { UpdateTranslateApi } from '../../services/TranslatationService';
 
 export default props => {
-  const {d, languageCode} = props;
-  const {data, dispatch} = useContext(AppContext);
+  const {d, languageCode, value, dispatch} = props;
+  const [translatedValue, setTranslatedValue] = useState(value);
 
-  const handleTranslateInputChange = (update) => {
-    dispatch({
-        TYPE: UPDATE_TRANSLATE, 
-        payload: {
-            d, 
-            languageCode,
-            update
-        }
-    });
+  const handleUpdateTranslate = (languageCode, key, translatedValueUpdated) => {
+    //show table loader
+    dispatch(sectionLoader(true));
+    //call api
+    UpdateTranslateApi(languageCode, key, translatedValue).then((result) => {
+      //update old value with new value translate
+      dispatch(updateTranslate({ d, languageCode, update: translatedValueUpdated}));
+      //hidden loader
+      dispatch(sectionLoader(false));
+    })
   }
 
   return (
     <FormControl variant="outlined">
         <OutlinedInput
         type='text'
-        value={data.translations[d][languageCode]}
-        onChange={(e) => handleTranslateInputChange(e.target.value)}
+        value={translatedValue}
+        onChange={(e) => setTranslatedValue(e.target.value)}
         endAdornment={
             <InputAdornment position="end">
             <IconButton
                 aria-label="Update"
-                onClick={() => console.log(d)}
+                onClick={() => handleUpdateTranslate(languageCode, d, translatedValue)}
                 edge="end"
             >
                 <DoneIcon />

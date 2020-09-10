@@ -111,7 +111,7 @@ export default props => {
                   <TableRow
                     className={classes.tableRow}
                     hover
-                    key={i}
+                    key={d.toString() + i}
                   >
                     {hasCheckbox?<TableCell padding="checkbox">
                       <Checkbox
