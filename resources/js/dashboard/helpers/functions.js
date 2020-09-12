@@ -24,7 +24,7 @@ export function getLanguages() {
 }
 
 export function getCurrentLanguage() {
-    return handleLang(window.currentLanguage);
+    return handleLang(window.visitor);
 }
 
 export function handleLang(lang) {
@@ -34,7 +34,7 @@ export function handleLang(lang) {
 } 
 
 export function getCurrentLanguageCode() {
-    return window.currentLanguage['language_code'];
+    return window.visitor['language_code'];
 }
 
 export function getDirectionLabel(direction) {
@@ -42,12 +42,6 @@ export function getDirectionLabel(direction) {
     return 'Left To Right'
 }
 
-export function getTranslations() {
-    return window.translations;
-}
-
 export function translate(key) {
-    const keyTranslations = getTranslations()[key];
-    const keyword = keyTranslations[getCurrentLanguageCode()];
-    return keyword || null;
+    return window.keywords[key] || null;
 }

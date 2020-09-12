@@ -1,6 +1,6 @@
 import HTTP from "../../../helpers/HTTP";
 
-export default function ChangeLanguageApi(lang) {
-    const changeLanguageUrl = 'localization/languages/change';
-    return HTTP.put(changeLanguageUrl, {lang});
+export default function ChangeLanguageApi(default_lang) {
+    const changeLanguageUrl = 'visitors/information';
+    return HTTP.put(changeLanguageUrl, {default_lang});
 }

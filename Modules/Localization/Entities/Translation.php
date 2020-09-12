@@ -6,5 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Translation extends Model
 {
-    protected $fillable = [];
+    protected $guarded = [];
+
+    protected $primaryKey = 'translation_id';
+
 }

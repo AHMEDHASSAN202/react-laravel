@@ -12,5 +12,5 @@ export const AppState = {
     dir: getDirection(),
     languages: getLanguages(),
     currentLanguage: getCurrentLanguage(),
-    translations: getTranslations()
+    translations: window.translations
 };

@@ -1,10 +1,11 @@
 <?php
 
-namespace Modules\Localization\Http\Requests;
+namespace Modules\VisitorsInformation\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
-class ChangeLanguageRequest extends FormRequest
+class UpdateOrCreateVisitorInformationRequest extends FormRequest
 {
     /**
      * Get the validation rules that apply to the request.
@@ -14,7 +15,11 @@ class ChangeLanguageRequest extends FormRequest
     public function rules()
     {
         return [
-            'lang'  => 'required'
+            'default_lang'  => [
+                'sometimes',
+                'required',
+                Rule::exists('languages', 'language_code')
+            ]
         ];
     }
 

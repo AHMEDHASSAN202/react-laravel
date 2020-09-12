@@ -1,6 +1,8 @@
 {
+    "Auth": true,
     "Localization": true,
     "Users": true,
     "Settings": true,
-    "Dashboard": true
+    "Dashboard": true,
+    "VisitorsInformation": true
 }

@@ -6,5 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Option extends Model
 {
-    protected $fillable = [];
+    protected $guarded = [];
+
+    protected $primaryKey = 'option_id';
+
+
+    public function isCurrentLanguage()
+    {
+        return $this->option_key === 'default_lang';
+    }
+
 }

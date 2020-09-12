@@ -11,6 +11,7 @@
 |
 */
 
-Route::prefix('auth')->group(function() {
-    Route::get('/', 'AuthController@index');
-});
+Route::get('dashboard/login', 'DashboardAuthController@login')
+        ->name('auth::login')
+        ->middleware(['guest']);
+

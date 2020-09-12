@@ -223,6 +223,6 @@ const Routes = () => {
       <Redirect to="/dashboard/not-found"/>
     </Switch>
   );
-};
+}; 
 
 export default Routes;

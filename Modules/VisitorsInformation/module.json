@@ -1,0 +1,13 @@
+{
+    "name": "VisitorsInformation",
+    "alias": "visitorsinformation",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\VisitorsInformation\\Providers\\VisitorsInformationServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

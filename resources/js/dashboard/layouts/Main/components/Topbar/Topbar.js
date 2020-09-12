@@ -31,6 +31,9 @@ const useStyles = makeStyles(theme => ({
   lang: {
     '& > *': {
       color: '#fff',
+    },
+    '& > MuiInput-underline:before': {
+      content: '',
     }
   }
 }));

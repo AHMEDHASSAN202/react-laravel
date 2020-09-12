@@ -30,11 +30,12 @@ import DvrIcon from '@material-ui/icons/Dvr';
 import MailIcon from '@material-ui/icons/Mail';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import RedeemIcon from '@material-ui/icons/Redeem';
+import { translate } from './helpers/functions';
 
 export default [
     [
           {
-            title: 'Dashboard',
+            title: translate('dashboard::dashboard'),
             href: '/dashboard',
             icon: <DashboardIcon />
           },
@@ -169,30 +170,30 @@ export default [
           ]
         },
         {
-            title: 'Pages',
+            title: translate('dashboard::pages'),
             href: '/dashboard/pages',
             icon: <PagesIcon />
         },
         {
-            title: 'Media',
+            title: translate('dashboard::media'),
             href: '/dashboard/media',
             icon: <PermMediaIcon />
         },
     ],
     [
         {
-            title: 'Localization',
+            title: translate('dashboard::localization'),
             href: '#',
             icon: <LanguageIcon />,
             key: 'localization',
             children: [
               {
-                title: 'Languages',
+                title: translate('dashboard::languages'),
                 href: '/dashboard/languages',
                 icon: <LanguageIcon />,
               },
               {
-                title: 'Translations',
+                title: translate('dashboard::translations'),
                 href: '/dashboard/translations',
                 icon: <GTranslateIcon />,
               },
@@ -209,30 +210,30 @@ export default [
             ]
         },
         {
-            title: 'Users',
+            title: translate('dashboard::users'),
             href: '#',
             icon: <PeopleOutlineIcon />,
             key: 'users',
             children: [
               {
-                title: 'Users',
+                title: translate('dashboard::users'),
                 href: '/dashboard/users',
                 icon: <PeopleOutlineIcon />,
               },
               {
-                title: 'Roles',
+                title: translate('dashboard::roles'),
                 href: '/dashboard/roles',
                 icon: <PersonAddDisabledIcon />,
               }
             ]
         },
         {
-            title: 'Reports',
+            title: translate('dashboard::reports'),
             href: '/dashboard/reports',
             icon: <AssessmentIcon />
         },
         {
-            title: 'Settings',
+            title: translate('dashboard::settings'),
             href: '/dashboard/settings',
             icon: <SettingsIcon />
         },
