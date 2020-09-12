@@ -137,6 +137,14 @@ iframe {
     color: #4b2354;
 }
 
+.txt2-error {
+    font-family: SourceSansPro-Regular;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #d01508;
+    font-weight: bold;
+}
+
 .hov1:hover {
     color: #4b2354;
     text-decoration: underline;

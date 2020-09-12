@@ -21,18 +21,23 @@
 
             <div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
 
-                <form class="login100-form validate-form" autocomplete="off">
-                        <span class="login100-form-title p-b-37">
-                            Dashboard
-                        </span>
+                <form method="post" action="{{ route("auth::submitLogin", compact('target')) }}" class="login100-form validate-form" autocomplete="off">
+                    <span class="login100-form-title p-b-37">
+                        Dashboard
+                    </span>
 
+                    @csrf()
+
+                    @if (!empty($errors->all()))
+                        <div class="txt2-error p-b-10 text-center"><b>invalid email or password</b></div>
+                    @endif
                     <div class="wrap-input100 validate-input m-b-20" data-validate="Enter email">
-                        <input readonly class="input100" type="email" name="email" value="" placeholder="Email" onfocus="if (this.hasAttribute('readonly')) { this.removeAttribute('readonly');this.blur();this.focus();  }">
+                        <input readonly class="input100" type="email" value="{{ old('email') }}" name="email" placeholder="Email" onfocus="if (this.hasAttribute('readonly')) { this.removeAttribute('readonly');this.blur();this.focus();  }">
                         <span class="focus-input100"></span>
                     </div>
 
                     <div class="wrap-input100 validate-input m-b-25" data-validate = "Enter password">
-                        <input readonly class="input100" type="password" name="password" value="" placeholder="password" onfocus="if (this.hasAttribute('readonly')) { this.removeAttribute('readonly');this.blur();this.focus();  }">
+                        <input readonly class="input100" type="password" name="password" placeholder="password" onfocus="if (this.hasAttribute('readonly')) { this.removeAttribute('readonly');this.blur();this.focus();  }">
                         <span class="focus-input100"></span>
                     </div>
 
@@ -41,7 +46,7 @@
                     </div>
 
                     <div class="container-login100-form-btn">
-                        <button class="login100-form-btn">
+                        <button type="submit" class="login100-form-btn">
                             Login
                         </button>
                     </div>

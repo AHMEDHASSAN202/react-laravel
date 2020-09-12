@@ -1,5 +1,7 @@
 <?php
 
 return [
-    'name' => 'Auth'
+    'name' => 'Auth',
+    'default_role' => 'user',
+    'dashboard_roles' => ['admin']
 ];

@@ -10,3 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+//dashboard routes
+Route::group(['prefix' => 'dashboard/localization'], function () {
+    Route::get('languages', 'LanguagesController@index');
+    Route::put('translations/{translation_key}', 'TranslationsController@updateTranslate');
+});

@@ -11,7 +11,13 @@
 |
 */
 
-Route::get('dashboard/login', 'DashboardAuthController@login')
-        ->name('auth::login')
-        ->middleware(['guest']);
+/**
+ * Dashboard Routes
+ */
+Route::group(['middleware' => ['guest']], function () {
+    //dashboard login page
+    Route::get('dashboard/login', 'DashboardAuthController@login')->name('auth::login');
+    //submit login to dashboard
+    Route::post('dashboard/login', 'DashboardAuthController@submitLogin')->name('auth::submitLogin');
+});
 

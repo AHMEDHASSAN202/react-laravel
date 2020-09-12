@@ -1,6 +1,6 @@
 // window._ = require('lodash');
 
-const { ApiUrl } = require('./Config');
+// const { Domain } = require('./Config');
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -23,7 +23,7 @@ const { ApiUrl } = require('./Config');
 
 window.axios = require('axios');
 
-window.axios.defaults.baseURL = ApiUrl;
+// window.axios.defaults.baseURL = Domain;
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /**
